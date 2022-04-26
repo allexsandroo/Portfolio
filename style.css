@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: grid;
+   
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+nav{
+    background-color: #504846;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar{
+   
+    width: 90%;
+    height: 10vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo{
+   
+    width: 40%;
+    height: 10vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+   
+}
+
+nav button{
+    background-color: transparent;
+    color: red;
+    border: transparent;
+    position: absolute;
+   left: 90%;
+   top: 20px;
+   cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+
+.oobtn{
+    display: none;
+}
+
+.ccbtn{
+    display: none;
+}
+
+.menu{
+    
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu ul li{
+    padding:20px ;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a:hover{
+   text-decoration: underline red 2px;
+   transition:  1s;
+}
+
+.banner{
+   
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video{
+ width: 100%;
+ height: 100vh;
+ object-fit: cover;
+ position: fixed;
+ z-index: -999;
+}
+
+.t-banner h1{
+    font-family:'Bebas Neue', sans-serif;
+    color: white;
+    font-size: 4.5rem;
+    animation: descer 5s;
+}
+
+@keyframes descer{
+    0%{
+transform: translateX(50rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.t-banner h1::after ,.t-banner h2::after{
+content: '';
+width: 460px;
+height: 10px;
+background-color: red;
+display: block;
+}
+
+.t-banner h2{
+    font-family:'Bebas Neue', sans-serif;
+    color: white;
+    font-size: 10rem;
+    animation: descer 5s;
+}
+
+.sobre{
+    background-color: #0d214f;
+   
+    width: 100%;
+    height: 100vh;
+    display: grid;
+  
+}
+
+
+
+.i-sobre{
+  
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-sobre h1{
+   margin-top: 80px;
+   font-size: 2rem;
+   font-family: sans-serif;
+}
+
+.i-sobre h1::after{
+content: '';
+width: 90px;
+height: 5px;
+display: block;
+background-color: red;
+}
+
+.t-sobre{
+    
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.cont-sobre{
+
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.card-sobre{
+background-color: aqua;
+width: 60%;
+height: 60vh;
+margin: auto auto;
+display: flex;
+}
+
+.ladoA{
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    display: block;
+   
+    
+}
+
+.ladoA h1{
+   padding-left: 20px;
+    margin-top: 150px;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ladoA h2{
+    padding-left: 20px;
+     font-size: 1.3rem;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+.ladob{
+    background-color: blue;
+    width: 40%;
+    height: 100%;
+}
+
+.ladob img{
+    width: 100%;
+    height: 100%;
+}
+
+.ladoA button{
+    padding: 10px 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #0d214f;
+    cursor: pointer;
+}
+
+.ladoA button:hover{
+   
+    background-color:#0d214f;
+    
+}
+
+
+.hab{
+    background-color:whitesmoke;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.abc video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -999;
+   }
+
+.i-hab{
+   
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-hab h1{
+    color: black;
+    margin-top: 80px;
+    font-size: 2rem;
+    font-family: sans-serif;
+ }
+
+ .i-hab h1::after{
+     content: '';
+     width: 180px;
+     height: 5px;
+     display: block;
+     background-color: red;
+ }
+
+ .cont-hab{
+   
+    width: 100%;
+    height: 80vh;
+    display: grid;
+   
+}
+
+.card{
+    background-color: white;
+    width:500px ;
+    height: 130px;
+    margin: 10px auto;
+    display: flex;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+
+
+
+ .t-card h1{
+     color: black;
+ }
+ 
+ .bar{
+     background-color: red;
+     width: 100px;
+     height:20px ;
+     border-radius: 5px 0 0;
+     animation: bar 5s ease-in ;
+ 
+ }
+
+.cars-hab{
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  flex-wrap: wrap;
+   
+}
+
+.hab-progress{
+    background-color:whitesmoke;
+    width: 250px;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.hab-progress:hover{
+    transform: rotateY(180deg);
+}
+
+.hab-progress .ladoA{
+    background-color: #0d214f;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.hab-progress .ladob{
+    background-color:cornflowerblue;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+}
+
+.ladoA >img{
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+}
+
+#html{
+    background-color: #ff5d10;
+}
+
+#vermelho{
+    background-color: #ff5d10;
+}
+
+#css{
+    background-color: #007dd7;
+}
+
+#azul{
+    background-color: #007dd7;
+}
+
+
+#js{
+    background-color: #ffcd25;
+}
+
+#amarelo{
+    background-color: #ffcd25;
+}
+
+.ladob{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ladob>h1{
+    font-size: 4rem;
+}
+
+.progress{
+    background-color: white;
+    width: 150px;
+    height: 10px;
+  
+}
+
+.progressMax{
+    background-color: red;
+     width: 50%;
+     height: 100%;
+    
+ }
+ 
+
+/*-- HAB_FIM    --*/
+ .port{
+     background-color: white;
+     width: 100%;
+     height: 100vh;
+ }
+
+ .t-port{
+     background-color: white;
+     width: 100%;
+     height: 20vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+.t-port h1{
+    margin-top: 70px;
+}
+
+.t-port h1::after{
+   content: '';
+   background-color: red;
+   width: 100px;
+   height: 5px;
+   display: block;
+}
+
+.c-port{
+   
+    width: 90%;
+    height: 60vh;
+    margin: 70px auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.c-port div{
+    
+    width: 288px;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.c-port img{
+    width: 100%;
+    height: 100%;
+}
+
+#move{
+display: grid;
+text-align: center;
+}
+
+#move button{
+    width: 80px;
+    height: 40px;
+    margin: 0 auto;
+    
+}
+
+#move button:hover{
+    background-color: #504846;
+    border: 1px black solid;
+    transition: 1s ease-in;
+}
+
+#login{
+    display: grid;
+text-align: center;
+}
+
+#login button{
+    width: 80px;
+    height: 40px;
+    margin: 0 auto;
+    
+}
+
+.formulario{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.t-form{
+    
+    width: 100%;
+    height: 20vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.t-form h1{
+    
+margin-top: 50px;
+}
+
+.t-form h1::after{
+    content: '';
+    width: 120px;
+    height: 5px;
+    display: block;
+    background-color: red;
+}
+
+.c-form{
+    
+    width: 100%;
+    height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.c-form div{
+   
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 44%);
+    width:400px;
+    height: 400px; 
+    border-radius: 5px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.c-form div h1{
+   margin-top: 20px;
+}
+
+
+.c-form h1{
+    text-align: center;
+}
+
+form{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+form input{
+    width: 300px;
+    height: 30px;
+    margin-top: 50px;
+    border: 0;
+   border-radius: 50px;
+}
+
+form textarea{
+    width: 300px;
+    height: 70px;
+    margin-top: 30px;
+    border: 0;
+}
+
+form button{
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    margin: 15px auto;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.rodape{
+    background-color: #0d214f;
+    width: 100%;
+    height: 350px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.rod{
+    
+    width: 300px;
+    height: 200px;
+}
+ 
+.icons{
+   
+    width: 300px;
+    height: 50px;
+    display: flex;
+}
+
+.icon{
+    
+    width: 90px;
+    height: 50px;
+    margin-left: 7px;
+}
+
+.icon img{
+    width: 70%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.icon img:hover{
+    cursor: pointer;
+    transform: scaleX(1.1);
+}
+
+.cont-foot{
+   
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items:flex-end;
+    
+}
+
+.cont-foot h1{
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.cont-foot h2{
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+
+
+@media (max-width:700px){
+
+    nav button{
+        display: flex;
+        transition: 5s ease-in;
+    }
+
+    #oobtn{
+        display: none;
+        transition: 5s ease-in;
+    }
+    .menu{
+        display: block;
+      overflow: hidden;
+        background-color: #504846;
+        width: 0;
+        height: 1050px;
+        right: 0;
+        position: fixed;
+        transition: 1s ease-in;
+    }
+
+    .menu ul{
+        display: grid;
+        margin-top: 200px;
+    }
+
+    .menu li{
+        margin-top: 20px;
+    }
+
+
+    .t-banner h1{
+        font-size: 3rem;
+        margin-top: 300px;
+    }
+
+    .t-banner h2{
+        font-size: 7rem;
+
+    }
+
+    .t-banner h1::after ,.t-banner h2::after{
+        content: '';
+        width: 320px;
+        height: 10px;
+        background-color: red;
+        display: block;
+    }
+        
+    header{
+        
+        height: 1100px;
+    }    
+
+    .banner video{
+        width: 100%;
+        height: 1500px;
+        object-fit: cover;
+        position: fixed;
+        z-index: -999;
+       }
+
+       .sobre{
+        height: 1100px;  
+       }
+
+       .port{
+           background-color: white;
+       }
+
+       .cont-sobre{
+          
+           height: 900px;
+       }
+
+       .card-sobre{
+           width: 90%;
+           height: 700px;
+           margin-top: 20px;
+       }
+
+       .ladoA{
+           width: 100%;
+           padding: 50px;
+           
+       }
+
+       .ladoA h1{
+        margin-top: 20px;
+        
+    }
+
+       .ladob{
+        width: 100%;
+    }
+       .card-sobre{
+           display: grid;
+       }
+
+       .card{
+           width: 80%;
+       }
+
+       .hab{
+           height: 1400px;
+           
+       }
+
+       .ladoA{
+           cursor: pointer;
+       }
+
+       .ladob{
+        cursor: pointer;
+       }
+       .port{
+           height: 1750px;
+       }
+
+       .c-port div{
+       width: 100%;
+      
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="../PortFolio/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../PortFolio/imgs/logoAS.png">
+                </div>
+                
+                <button id="ccbtn" onclick="obtn()">&#9776</button>
+                <button id="oobtn" onclick="cbtn()">X</button>
+                <div class="menu">
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#sobre">Sobre</a></li>
+                      <li><a href="#hab">Habilidades</a></li>
+                      <li><a href="#porfolio">Portfolio</a></li>
+                      <li><a href="#footer">Contatos</a></li>
+                  </ul>
+                </div>
+            </div>
+           
+        </nav>
+        <div class="banner">
+            <video autoplay="autoplay" loop="loop" muted="muted">
+
+                <source src="../PortFolio/imgs/teclado2.mp4" type="video/mp4" >
+     
+            </video>
+            <div class="t-banner">
+                <h1>Desenvolvedor web</h1>
+                <h2>Font-End</h2>
+
+            </div> 
+           
+        </div>
+    </header>
+    <main>
+        <section id="sobre" class="sobre">
+        <div class="i-sobre">
+            <h1>Sobre</h1>
+        </div>
+
+        <div class="cont-sobre">
+            <div class="card-sobre">
+                 <div class="ladoA">
+                     <h1>Alexsandro Nunes</h1>
+                     <h2>Desenvolvedor Web - Font-End</h2>
+                     <button>in</button>
+                 </div>
+                 <div class="ladob">
+                     <img src="../PortFolio/imgs/eu.jpg">
+                 </div>
+            </div>
+            
+          
+            
+        </div>
+        </section>
+
+     <section id="hab" class="hab">
+            <div class="i-hab">
+                <h1>Habilidades</h1>
+            </div>
+           <div class="cars-hab">
+               <!--primeiro-->
+               <div class="hab-progress">
+                   <div class="ladoA" id="html">
+                       <img src="../PortFolio/imgs/html5.png" alt="">
+                      
+                   </div>
+                   <div class="ladob" id="vermelho">
+                          <h1>50%</h1>
+                   </div>
+
+               </div>
+               <!--psegundo-->
+               <div class="hab-progress">
+
+                <div class="ladoA" id="css">
+                    <img src="../PortFolio/imgs/css3.png" alt="">
+                </div>
+                <div class="ladob" id="azul">
+                    <h1>40%</h1>
+                   
+                </div>
+                   
+            </div>
+                 <!--treceiro-->
+            <div class="hab-progress">
+                <div class="ladoA" id="js">
+                    <img src="../PortFolio/imgs/javascript.png" alt="">
+                </div>
+                <div class="ladob" id="amarelo">
+                    <h1>30%</h1>
+                </div>
+            </div>
+
+
+          </div>
+        
+            </section>
+
+            <section id="porfolio" class="port">
+                <div class="t-port">
+                    <h1>PortFolio</h1>
+                </div>
+                <div class="c-port">
+                    <!--1-->
+                       <div id="move">
+                           <h1>IMC</h1>
+                        <input type="number" id="pes" placeholder="Peso">
+                        <input type="number" id="alt" placeholder="Altura 1,70">
+                        <button onclick="imc()">IMC</button>
+                       </div>
+                        <!--2-->
+                       <div id="login">
+                              <h1>Login</h1>
+                              <input type="name" id="nome" placeholder="Dica Rei da Selva">
+                              <input type="password" id="senha" placeholder="Dica Ano atual">
+                              <button onclick="login()">Submit</button>
+
+                       </div>
+                     <!--3-->
+                       <div>
+                        <img src="../PortFolio/imgs/construc-731 (1).gif">
+                        Em contruçao
+                       </div>
+                      <!--4-->
+                      <div>
+                        <img src="../PortFolio/imgs/construc-731 (1).gif">
+                        Em contruçao
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="footer" class="formulario">
+                <div class="t-form">
+                  <h1>Formulario</h1>
+                </div>
+                <div class="c-form">
+                    <div>
+                        <h1>Contato</h1>
+                       <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="5f191cfb-6c47-4626-a514-ad0b7f512d8f">
+                        <input type="hidden" name="redirectTo" value="https://smp11-alexsandro.000webhostapp.com/#footer">
+                          <input type="text" name="name" placeholder="Nome">
+                          <input type="email" name="email" placeholder="E-mail">
+                          <textarea name="message"> </textarea>
+                          <button type="submit">Enviar</button>
+                       </form>
+
+                    </div>
+
+                </div>
+
+            </section>
+       
+    </main>
+
+    <footer  class="rodape">
+        <div class="rod">
+            <div class="icons">
+
+               <div class="icon">
+                   <a href="https://br.linkedin.com/?trk=BR-SEM_google-adwords_Jordan-brand-sign-up&mcid=6821526239111716926&trk2=ga_campid=12619604102_asid=122510713320_crid=509739556286_kw=linkedin%20br_d=c_tid=kwd-1211789141218_n=g_mt=p_geo=1031720_slid=&gclid=EAIaIQobChMIqYjdr_Pr9QIVigeRCh10oAE_EAAYASAAEgJSK_D_BwE&gclsrc=aw.ds">
+                    <img  src="../PortFolio/imgs/linkedln50.png">
+                   </a>
+                  
+               </div>
+
+               <div class="icon">
+                   <a href="https://www.whatsapp.com/?lang=pt_br">
+                       <img src="../PortFolio/imgs/zap100.png">
+
+                   </a>
+                </div>
+
+                <div class="icon">
+                    <a href="https://accounts.google.com/signin/v2/identifier?hl=pt-br&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                        <img src="../PortFolio/imgs/email50.png" >
+
+                    </a>
+                 </div>
+
+            </div>
+            <div class="cont-foot">
+               
+               <h2>Copyright © 2022 Alexsandro Nunes</h2>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../PortFolio/script.js"></script>
+</body>
+</html>
